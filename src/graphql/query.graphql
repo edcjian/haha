@@ -1,13 +1,7 @@
-{
-    search(text:"an"){
-        __typename
-        ... on Human{
-            name
-            height
-        }
-        ... on Starship{
-            name
-            length
+query  findName{
+    departments_aggregate{
+        nodes{
+            location_id
         }
     }
 }

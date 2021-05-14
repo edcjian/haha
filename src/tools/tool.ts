@@ -23,7 +23,7 @@ let ae:any={
     limit:1,
     offset:1
 }
-let ap =new ae(1,2,3)
+
 
 
 
@@ -32,7 +32,6 @@ export async function fetchData(){
  let data=   await request.get<MyData[]>('employees',{
         params:new m('gt.150',10,3)
  })
-
     return data
     // return dp.map((i: { _id: any; }) => i._id)
 }
